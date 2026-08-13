@@ -1,0 +1,199 @@
+/* Reset podstawowych marginesów i ustawienia globalne */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Kolorystyka: Ciemny granat/niebieski (#0b132b, #1c2541) oraz Akcent Różowy (#ff007f) */
+body {
+    background-color: #0b132b;
+    color: #e0e6ed;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* PASEK NAWIGACJI */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c2541;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid #ff007f;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav .pink-text {
+    color: #ff007f;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #e0e6ed;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff007f;
+}
+
+/* NAGŁÓWEK GŁÓWNY */
+header {
+    text-align: center;
+    padding: 4rem 1rem 3rem 1rem;
+    background: linear-gradient(180deg, #1c2541 0%, #0b132b 100%);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header .highlight {
+    color: #ff007f;
+    text-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    color: #48cae4;
+}
+
+/* KONTENER GŁÓWNY */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* KARTY SEKCJI */
+.card {
+    background-color: #1c2541;
+    border-radius: 10px;
+    padding: 2rem;
+    border-left: 5px solid #ff007f;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.pink-accent {
+    color: #ff007f;
+}
+
+.card p {
+    margin-bottom: 0.8rem;
+}
+
+/* SPECYFIKACJA KOMPUTERA */
+.spec-list {
+    list-style: none;
+}
+
+.spec-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.spec-list li:last-child {
+    border-bottom: none;
+}
+
+/* TAGI NARZĘDZI */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.tag {
+    background-color: #0b132b;
+    color: #48cae4;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid #48cae4;
+}
+
+/* ZNAJOMI */
+.friends-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.friend-badge {
+    background-color: #0b132b;
+    color: #e0e6ed;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255, 0, 127, 0.4);
+}
+
+/* LINKI I PRZYCISKI */
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #ff007f;
+    color: #ffffff;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #e00070;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 0, 127, 0.4);
+}
+
+/* STOPKA */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #1c2541;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #a0aec0;
+    font-size: 0.9rem;
+}
+
+footer .ai-notice {
+    margin-top: 0.5rem;
+    color: #ff007f;
+    font-weight: 500;
+}
